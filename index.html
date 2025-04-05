@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Logo Gallery</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search logos or hashtags...">
+                <button id="search-button">Search</button>
+            </div>
+            <div class="popular-hashtags">
+                <h3>Popular Hashtags:</h3>
+                <div id="hashtag-container" class="hashtag-list"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <h2>Upload New Logos</h2>
+                <form id="upload-form">
+                    <div class="form-group">
+                        <label for="logo-name">Logo Name:</label>
+                        <input type="text" id="logo-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="logo-category">Category:</label>
+                        <input type="text" id="logo-category" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="logo-hashtags">Hashtags (separate with spaces):</label>
+                        <input type="text" id="logo-hashtags" placeholder="e.g. #modern #tech #blue">
+                        <small>Add # before each tag or we'll add it automatically</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="logo-file">Logo File:</label>
+                        <input type="file" id="logo-file" accept="image/*" required>
+                    </div>
+                    <button type="submit">Upload Logo</button>
+                </form>
+            </div>
+
+            <div class="gallery-container">
+                <h2>Logo Gallery</h2>
+                <div id="logo-gallery" class="gallery"></div>
+            </div>
+        </main>
+
+        <aside class="ad-space">
+            <h3>Advertisement</h3>
+            <div class="ad-placeholder">
+                <p>Your Ad Here</p>
+            </div>
+            <div class="trending-hashtags">
+                <h3>Trending Hashtags</h3>
+                <div id="trending-hashtags-list"></div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
